@@ -31,7 +31,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/PJxDev/product-preview-card-component--Front-end-Mentor-)
 - Live Site URL: [Add live site URL here](https://pjxdev.github.io/product-preview-card-component--Front-end-Mentor-/)
 
 ## My process

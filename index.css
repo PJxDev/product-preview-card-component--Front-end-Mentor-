@@ -1,0 +1,115 @@
+:root {
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+  --dark-cyan: hsl(158, 36%, 37%);
+  --very-dark-cyan: hsl(158, 36%, 24%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cream);
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: var(--dark-grayish-blue);
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  max-width: 40rem;
+  background-color: var(--white);
+  border-radius: 0 0.5rem 0.5rem 0;
+  line-height: 1.7;
+}
+
+article img {
+  content: url("images/image-product-desktop.jpg");
+  border-radius: 0.5rem 0 0 0.5rem;
+  width: 50%;
+}
+
+.product__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.product__info h1,
+.price label:first-child {
+  font-family: "Fraunces", serif;
+  color: var(--very-dark-blue);
+  font-size: 30px;
+  line-height: 1;
+}
+
+.price label:first-child {
+  color: var(--dark-cyan);
+  margin-right: 1rem;
+}
+
+.product__info .price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.price label:last-child {
+  text-decoration: line-through;
+  justify-self: center;
+}
+
+.btn {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 0.5rem;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  fill: var(--white);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.btn:active {
+  background-color: var(--very-dark-cyan);
+}
+
+.btn a {
+  text-decoration: none;
+}
+.btn a:visited {
+  color: var(--white);
+}
+
+@media screen and (max-width: 600px) {
+  article {
+    flex-direction: column;
+    max-width: 90%;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  article img {
+    content: url("images/image-product-mobile.jpg");
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+  }
+}
